@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-US">
+<html manifest = "flappybat.appcache">
+	<head>
+		<title>Flappy Bat</title>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
+		<script src="script.js"></script>
+		<meta name="description" content="A simple game modeled after the extremely popular game Flappy Bird. All sprites used were created by JD Porterfield">
+		<meta name="author" content="JD Porterfield">
+	</head>
+	<body>
+		<div  id="background" class="background">
+			<div id="startGraphic" class="startGraphic"></div>
+			<div id="bat" class="bat"></div>
+			<div id="pipeContainer"></div>
+			<div class="score">
+				<p id="score" class="largeFont">0</p>
+			</div>
+			<div id="endCard" class="endCard" >
+				<p class="smallFont">Score:</p>
+				<p id="endScore" class="largeFont"></p>
+				<p class="smallFont">High Score:<p>
+				<p id="highScore" class="largeFont"></p>
+				<p class="smallFont">Tap to go on.<p>
+			</div>
+		</div>
+	</body>
+</html>
