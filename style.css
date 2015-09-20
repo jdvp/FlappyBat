@@ -1,12 +1,12 @@
 /* author : JD Porterfield */
 
 html {
-	height: 100%;
+	height : 100%;
 }
 
 body {
-	height: 100%;
-	overflow: hidden;
+	height : 100%;
+	overflow : hidden;
 }
 
 .smallFont  {
@@ -14,47 +14,47 @@ body {
 }
 
 .largeFont {	
-	font-family: 'Londrina Sketch', cursive;
+	font-family : 'Londrina Sketch', cursive;
 	color : white;
 	margin : 0 0 0 0;
 }
 
 .background {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0em;
-	margin-bottom: 0em;
-	background-image: url("img/cave.png");
-	background-repeat: repear-x;
-	background-size: contain;
-	overflow: hidden;
-	position: fixed;
-	top: 0em;
-	left: 0em;
-	width : 100%;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 0em;
+	margin-bottom : 0em;
+	background-image : url("img/cave.png");
+	background-repeat : repear-x;
+	background-size : contain;
+	overflow : hidden;
+	position : fixed;
+	top : 0em;
+	left : 0em;
+	width  : 100%;
 }
 
 .bat{
-	background-image: url("img/bat2.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: fixed;
+	background-image : url("img/bat2.png");
+	background-repeat : no-repeat;
+	background-size : contain;
+	position : fixed;
 }
 
 .pipe{
-	background-image: url("img/pipe.png");
-	background-repeat: repeat-y;
-	position: fixed;
+	background-image : url("img/pipe.png");
+	background-repeat : repeat-y;
+	position : fixed;
 }
 
 .startGraphic{
-	background-image: url("img/readygraphic.png");
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: fixed;
-	margin-left: auto;
-	margin-right: auto;
-	top: 15%;
+	background-image : url("img/readygraphic.png");
+	background-repeat : no-repeat;
+	background-size : contain;
+	position : fixed;
+	margin-left : auto;
+	margin-right : auto;
+	top : 15%;
 }
 
 .score{
@@ -64,7 +64,7 @@ body {
 	left : 0;
 	right : 0;
 	height : 0;
-	text-align: center;
+	text-align : center;
 }
 
 .endCard {
