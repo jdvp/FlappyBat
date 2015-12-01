@@ -14,6 +14,8 @@ var endCard;
 var myInterval;
 var pipeInterval;
 var stepsLeft;
+var flapDisplay;
+var flaps;
 var bat;
 var y;
 
@@ -31,8 +33,11 @@ function determineSizes(){
 	pipeCounter = 0;
 	score = 0;
 	stepsLeft = 0;
+	flaps = 0;
 	myInterval = null;
 	pipeInterval = null;
+	flapDisplay = document.getElementById("flapNumber");
+	flapDisplay.innerHTML = "0";
 	
 	var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 	var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
@@ -127,6 +132,8 @@ Called to create an animation of the bat flapping its wings.
 Flapping its wings obviously creates lift, so this is also applied.
 */
 function flapWings(){
+	flaps += 1;
+	flapDisplay.innerHTML = flaps;
 	bat.style.backgroundImage = batImg[0];
 	setTimeout(function(){
 		bat.style.backgroundImage = batImg[1];
@@ -153,6 +160,7 @@ function loseGame(){
 	document.getElementById("highScore").innerHTML = localStorage.getItem("highScore");
 	endCard.style.visibility = "initial";
 	scoreDisplay.style.visibility = "hidden";
+	document.getElementById("flapPanel").style.visibility = "hidden";
 	bat.style.visibility = "hidden";
 	for(var i = 0; i < pipes.length; i++){
 		var t = document.getElementById(pipes[i]["name"] + "top");
@@ -331,6 +339,7 @@ Starts the game by showing/hiding the correct elements.
 */
 function start(){
 	document.getElementById("startGraphic").style.visibility = "hidden";
+	document.getElementById("flapPanel").style.visibility = "initial";
 	scoreDisplay = document.getElementById("score");
 	scoreDisplay.style.visibility = "initial";
 	scoreDisplay.innerHTML = "0";	

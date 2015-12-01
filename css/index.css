@@ -24,7 +24,7 @@ body {
 	margin-right : auto;
 	margin-top : 0em;
 	margin-bottom : 0em;
-	background-image : url("img/cave.png");
+	background-image : url("../img/cave.png");
 	background-repeat : repear-x;
 	background-size : contain;
 	overflow : hidden;
@@ -35,20 +35,20 @@ body {
 }
 
 .bat{
-	background-image : url("img/bat2.png");
+	background-image : url("../img/bat2.png");
 	background-repeat : no-repeat;
 	background-size : contain;
 	position : fixed;
 }
 
 .pipe{
-	background-image : url("img/pipe.png");
+	background-image : url("../img/pipe.png");
 	background-repeat : repeat-y;
 	position : fixed;
 }
 
 .startGraphic{
-	background-image : url("img/readygraphic.png");
+	background-image : url("../img/readygraphic.png");
 	background-repeat : no-repeat;
 	background-size : contain;
 	position : fixed;
@@ -78,4 +78,12 @@ body {
 	top : 50%;
 	left : 50%;
 	text-align : center;
+}
+
+.metrics {
+	position : fixed;
+	left : 1%;
+	bottom : 1%;
+	color: white;
+	visibility : hidden;
 }

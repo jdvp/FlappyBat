@@ -3,11 +3,11 @@
 <html manifest = "flappybat.appcache">
 	<head>
 		<title>Flappy Bat</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="css/index.css">
 		<link href='https://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'>
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
 		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-		<script src="script.js"></script>
+		<script src="js/index.js"></script>
 		<meta name="description" content="A simple game modeled after the extremely popular game Flappy Bird. All sprites used were created by JD Porterfield">
 		<meta name="author" content="JD Porterfield">
 		
@@ -36,6 +36,10 @@
 				<p class="smallFont">High Score:<p>
 				<p id="highScore" class="largeFont"></p>
 				<p class="smallFont">Tap to go on.<p>
+			</div>
+			<div id="flapPanel" class ="metrics">
+					<p class = "smallFont">Wings Flapped:</p>
+					<p id="flapNumber" class="largeFont ">0</p>
 			</div>
 		</div>
 	</body>
